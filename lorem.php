@@ -4,7 +4,7 @@ main($argv);
 
 function main($args) {
     if (!isset($args[2]) || strtolower($args[2]) == 'p') {
-        if (is_numeric($args[1]) && $args[1] > 0) {
+        if (isset($args[1]) && is_numeric($args[1]) && $args[1] > 0) {
             if ($args[1] > 30) {
                 echo "This program yields no more than 30 paragraphs" . PHP_EOL;
                 exit();
@@ -41,7 +41,7 @@ function help($filename)
 {
     $h = "Error. usage: $filename NUMBER " . " ELEMENT" . PHP_EOL;
     $h .= "where ELEMENT can be ".PHP_EOL;
-    $h .= "- 'p' for paragraps,".PHP_EOL;
+    $h .= "- 'p' for paragraphs (default),".PHP_EOL;
     $h .= "- 's' for sentences,".PHP_EOL;
     $h .= "- 'w' for words,".PHP_EOL;
     $h .= "- 'c' for characters,".PHP_EOL;
