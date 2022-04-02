@@ -64,3 +64,8 @@ In GNU/Linux, you can place an alias on `~/.bash_aliases` or `~/.bashrc`:
 alias lorem="php /path/to/your/lorem.php "
 ```
 
+so you can use the script as a command from any directory in your system:
+
+```
+lorem 5 s
+```
