@@ -80,7 +80,7 @@ function getLoremWords($num)
 function getLoremChars($num)
 {
     $lorem = implode(PHP_EOL,lorem()).PHP_EOL;
-    return substr($lorem, 0, $i);
+    return substr($lorem, 0, $num);
 }
 
 function lorem()
